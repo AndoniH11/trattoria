@@ -125,7 +125,7 @@ class ReservaForm extends React.Component {
                     {(() => {
                         if (value.servicio === 'desayuno') {
                             return(
-                            <div>
+                            <div className='hora-container'>
                                 <p>
                                     Hora
                                 </p>
@@ -146,7 +146,7 @@ class ReservaForm extends React.Component {
                             </div>)
                         } else if(value.servicio === 'comida'){
                             return(
-                                <div>
+                                <div className='hora-container'>
                                     <p>
                                         Hora
                                     </p>
@@ -168,7 +168,7 @@ class ReservaForm extends React.Component {
                             )
                         } else if(value.servicio === 'cena'){
                             return(
-                                <div>
+                                <div className='hora-container'>
                                     <p>Hora</p>
     
                                     <div className='hora'>

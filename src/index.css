@@ -616,7 +616,7 @@ cursor: pointer;
 .hora{
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   grid-gap: 20px;
 }
 
@@ -737,6 +737,60 @@ cursor: pointer;
 
 .boton-hora{
   display: flex;
+}
+
+@media (max-width: 900px){
+
+  .reserva-container{
+    width: 80vw;
+    height: auto;
+    padding-bottom: 30px;
+  } 
+
+}
+
+@media (max-width: 795px){
+
+  .reserva-form{
+    grid-template-rows: repeat(6, 100px)
+  }
+
+  .hora-container{
+    grid-row-start: 4;
+    grid-row-end: 6;
+  }
+
+  .continuar-button{
+    grid-row-start: 6;
+  }
+}
+
+@media (max-width: 620px){
+
+  .reserva-form{
+    grid-template-rows: repeat(8, 100px)
+  }
+
+  .servicio{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .hora-container{
+    grid-row-start: 6;
+    grid-row-end: 8;
+  }
+
+  .continuar-button{
+    grid-row-start: 8;
+  }
+
+}
+
+@media (max-width: 545px){
+  .numero{
+    grid-gap: 10px;
+  }
 }
 
 /* CONFIRMACION RESERVA */
